@@ -36,7 +36,11 @@ export default function Cryptocurrencies({ simplified }) {
               <Card
                 title={`${crypto.rank}. ${crypto.name}`}
                 extra={
-                  <img alt="" className="crypto-image" src={crypto.iconUrl} />
+                  <img
+                    alt="crypto"
+                    className="crypto-image"
+                    src={crypto.iconUrl}
+                  />
                 }
                 hoverable
               >
