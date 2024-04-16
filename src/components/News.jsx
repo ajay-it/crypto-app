@@ -30,7 +30,7 @@ export default function News({ simplified }) {
               className="select-news"
               placeholder="Select a Crypto"
               optionFilterProp="children"
-              value={newsCategory}
+              defaultValue={newsCategory}
               onChange={(value) => setNewsCategory(value)}
               filterOption={(input, option) =>
                 option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0

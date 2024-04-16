@@ -43,6 +43,7 @@ export default function Cryptocurrencies({ simplified }) {
                   />
                 }
                 hoverable
+                style={{ height: "100%" }}
               >
                 <p>Price: {millify(crypto.price)}</p>
                 <p>Market Cap: {millify(crypto.marketCap)}</p>
