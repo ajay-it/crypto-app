@@ -46,7 +46,7 @@ export default function News({ simplified }) {
           </Col>
         )}
 
-        {data.articles.map((news, i) => (
+        {data?.articles?.map((news, i) => (
           <Col xs={24} sm={12} lg={8} key={i}>
             <Card hoverable className="news-card" style={{ height: "100%" }}>
               <a href={news.url} target="_blank" rel="noreferrer">
