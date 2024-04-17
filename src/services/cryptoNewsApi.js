@@ -1,10 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const cryptoNewsHeaders = {
-  "X-Api-Key": "ca7056c914c140a78de53830824ddb3e",
+  "X-Api-Key": process.env.REACT_APP_NEWS_API_KEY,
 };
 
-const baseUrl = "https://newsapi.org/v2/everything";
+const baseUrl = process.env.REACT_APP_NEWS_API_BASE_URL;
 
 const createRequest = (url) => ({ url, headers: cryptoNewsHeaders });
 
