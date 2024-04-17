@@ -15,7 +15,7 @@ export const cryptoNewsApi = createApi({
     getCryptoNews: builder.query({
       query: ({ newsCategory, count }) =>
         createRequest(
-          `?q=${newsCategory}&sortBy=publishedAt&pageSize=${count}`
+          `v2/everything?q=${newsCategory}&sortBy=publishedAt&pageSize=${count}`
         ),
     }),
   }),
